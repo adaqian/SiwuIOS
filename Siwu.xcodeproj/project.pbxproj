@@ -14,6 +14,24 @@
 		8C7D3E091D5349CA00D21B5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C7D3E071D5349CA00D21B5A /* LaunchScreen.storyboard */; };
 		8C7D3E141D5349CA00D21B5A /* SiwuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D3E131D5349CA00D21B5A /* SiwuTests.swift */; };
 		8C7D3E1F1D5349CA00D21B5A /* SiwuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D3E1E1D5349CA00D21B5A /* SiwuUITests.swift */; };
+		8C7D3E351D53606700D21B5A /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D3E341D53606700D21B5A /* PushViewController.swift */; };
+		8C7D3E371D5360A100D21B5A /* CreateItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D3E361D5360A100D21B5A /* CreateItemViewController.swift */; };
+		8C7D3E4A1D543C7200D21B5A /* PhotoPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D3E491D543C7200D21B5A /* PhotoPickerViewController.swift */; };
+		8C7D3E4F1D543DFD00D21B5A /* VPImageCropperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D3E4E1D543DFD00D21B5A /* VPImageCropperViewController.m */; };
+		8C7D3E521D543EB700D21B5A /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D3E511D543EB700D21B5A /* Config.swift */; };
+		8C7D3E5B1D5469A300D21B5A /* JVFloatLabeledTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D3E561D5469A300D21B5A /* JVFloatLabeledTextField.m */; };
+		8C7D3E5C1D5469A300D21B5A /* JVFloatLabeledTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D3E581D5469A300D21B5A /* JVFloatLabeledTextView.m */; };
+		8C7D3E5D1D5469A300D21B5A /* NSString+TextDirectionality.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D3E5A1D5469A300D21B5A /* NSString+TextDirectionality.m */; };
+		8CAF94101D59BA6A00EFDEB2 /* AVOSCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CAF93FB1D59BA0600EFDEB2 /* AVOSCloud.framework */; };
+		8CAF94111D59BA6A00EFDEB2 /* AVOSCloudIM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CAF94071D59BA0600EFDEB2 /* AVOSCloudIM.framework */; };
+		8CAF94131D59BA8300EFDEB2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CAF94121D59BA8300EFDEB2 /* libz.tbd */; };
+		8CAF94151D59BB0000EFDEB2 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CAF94141D59BB0000EFDEB2 /* libc++.tbd */; };
+		8CAF94171D59BB0E00EFDEB2 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CAF94161D59BB0E00EFDEB2 /* libicucore.tbd */; };
+		8CAF94191D59BB1900EFDEB2 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CAF94181D59BB1900EFDEB2 /* libsqlite3.tbd */; };
+		8CAF941B1D59BB2600EFDEB2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CAF941A1D59BB2600EFDEB2 /* SystemConfiguration.framework */; };
+		8CAF941D1D59BB3800EFDEB2 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CAF941C1D59BB3800EFDEB2 /* MobileCoreServices.framework */; };
+		8CAF941F1D59BB4500EFDEB2 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CAF941E1D59BB4500EFDEB2 /* CoreTelephony.framework */; };
+		8CAF94211D59BB5000EFDEB2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CAF94201D59BB5000EFDEB2 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +49,83 @@
 			remoteGlobalIDString = 8C7D3DFA1D5349CA00D21B5A;
 			remoteInfo = Siwu;
 		};
+		8CAF93FA1D59BA0600EFDEB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CAF93EC1D59BA0600EFDEB2 /* AVOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8C8419861A5A791300C5C6C4;
+			remoteInfo = "AVOSCloud-iOS";
+		};
+		8CAF93FC1D59BA0600EFDEB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CAF93EC1D59BA0600EFDEB2 /* AVOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8C8419911A5A791300C5C6C4;
+			remoteInfo = "AVOSCloud-iOSTests";
+		};
+		8CAF93FE1D59BA0600EFDEB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CAF93EC1D59BA0600EFDEB2 /* AVOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 70CA7F681BDE2DC3000A3B21;
+			remoteInfo = "AVOSCloud-macOS";
+		};
+		8CAF94001D59BA0600EFDEB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CAF93EC1D59BA0600EFDEB2 /* AVOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 70F315321BDE503B00D691B3;
+			remoteInfo = "AVOSCloud-macOSTests";
+		};
+		8CAF94021D59BA0600EFDEB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CAF93EC1D59BA0600EFDEB2 /* AVOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 83D8CF551C17DAF50094279D;
+			remoteInfo = "AVOSCloud-tvOS";
+		};
+		8CAF94041D59BA0600EFDEB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CAF93EC1D59BA0600EFDEB2 /* AVOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8320F95C1C1918C60024B45E;
+			remoteInfo = "AVOSCloud-watchOS";
+		};
+		8CAF94061D59BA0600EFDEB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CAF93EC1D59BA0600EFDEB2 /* AVOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8C8419C31A5A796000C5C6C4;
+			remoteInfo = "AVOSCloudIM-iOS";
+		};
+		8CAF94081D59BA0600EFDEB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CAF93EC1D59BA0600EFDEB2 /* AVOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8C8419CD1A5A796000C5C6C4;
+			remoteInfo = "AVOSCloudIM-iOSTests";
+		};
+		8CAF940A1D59BA0600EFDEB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CAF93EC1D59BA0600EFDEB2 /* AVOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 704F3B6E1BE0D0180033245C;
+			remoteInfo = "AVOSCloudIM-macOS";
+		};
+		8CAF940C1D59BA0600EFDEB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CAF93EC1D59BA0600EFDEB2 /* AVOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 704F3B771BE0D0180033245C;
+			remoteInfo = "AVOSCloudIM-macOSTests";
+		};
+		8CAF940E1D59BA0600EFDEB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CAF93EC1D59BA0600EFDEB2 /* AVOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8C255D261AE9F815008A6FFC;
+			remoteInfo = "AVOSCloudCrashReporting-iOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +142,28 @@
 		8C7D3E1A1D5349CA00D21B5A /* SiwuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SiwuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C7D3E1E1D5349CA00D21B5A /* SiwuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiwuUITests.swift; sourceTree = "<group>"; };
 		8C7D3E201D5349CA00D21B5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C7D3E341D53606700D21B5A /* PushViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
+		8C7D3E361D5360A100D21B5A /* CreateItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateItemViewController.swift; sourceTree = "<group>"; };
+		8C7D3E491D543C7200D21B5A /* PhotoPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPickerViewController.swift; sourceTree = "<group>"; };
+		8C7D3E4D1D543DFD00D21B5A /* VPImageCropperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPImageCropperViewController.h; sourceTree = "<group>"; };
+		8C7D3E4E1D543DFD00D21B5A /* VPImageCropperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPImageCropperViewController.m; sourceTree = "<group>"; };
+		8C7D3E501D543E3C00D21B5A /* Siwu-bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Siwu-bridging-header.h"; sourceTree = "<group>"; };
+		8C7D3E511D543EB700D21B5A /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		8C7D3E551D5469A300D21B5A /* JVFloatLabeledTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFloatLabeledTextField.h; sourceTree = "<group>"; };
+		8C7D3E561D5469A300D21B5A /* JVFloatLabeledTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVFloatLabeledTextField.m; sourceTree = "<group>"; };
+		8C7D3E571D5469A300D21B5A /* JVFloatLabeledTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFloatLabeledTextView.h; sourceTree = "<group>"; };
+		8C7D3E581D5469A300D21B5A /* JVFloatLabeledTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVFloatLabeledTextView.m; sourceTree = "<group>"; };
+		8C7D3E591D5469A300D21B5A /* NSString+TextDirectionality.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TextDirectionality.h"; sourceTree = "<group>"; };
+		8C7D3E5A1D5469A300D21B5A /* NSString+TextDirectionality.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TextDirectionality.m"; sourceTree = "<group>"; };
+		8CAF93EC1D59BA0600EFDEB2 /* AVOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AVOS.xcodeproj; path = "../library/objc-sdk-master/AVOS/AVOS.xcodeproj"; sourceTree = "<group>"; };
+		8CAF94121D59BA8300EFDEB2 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		8CAF94141D59BB0000EFDEB2 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		8CAF94161D59BB0E00EFDEB2 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		8CAF94181D59BB1900EFDEB2 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		8CAF941A1D59BB2600EFDEB2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8CAF941C1D59BB3800EFDEB2 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		8CAF941E1D59BB4500EFDEB2 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		8CAF94201D59BB5000EFDEB2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +171,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CAF94211D59BB5000EFDEB2 /* CoreLocation.framework in Frameworks */,
+				8CAF941F1D59BB4500EFDEB2 /* CoreTelephony.framework in Frameworks */,
+				8CAF941D1D59BB3800EFDEB2 /* MobileCoreServices.framework in Frameworks */,
+				8CAF941B1D59BB2600EFDEB2 /* SystemConfiguration.framework in Frameworks */,
+				8CAF94191D59BB1900EFDEB2 /* libsqlite3.tbd in Frameworks */,
+				8CAF94171D59BB0E00EFDEB2 /* libicucore.tbd in Frameworks */,
+				8CAF94151D59BB0000EFDEB2 /* libc++.tbd in Frameworks */,
+				8CAF94131D59BA8300EFDEB2 /* libz.tbd in Frameworks */,
+				8CAF94101D59BA6A00EFDEB2 /* AVOSCloud.framework in Frameworks */,
+				8CAF94111D59BA6A00EFDEB2 /* AVOSCloudIM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +204,8 @@
 		8C7D3DF21D5349CA00D21B5A = {
 			isa = PBXGroup;
 			children = (
+				8CAF93EB1D59B9B300EFDEB2 /* Framework */,
+				8C7D3E4B1D543DCA00D21B5A /* Library */,
 				8C7D3DFD1D5349CA00D21B5A /* Siwu */,
 				8C7D3E121D5349CA00D21B5A /* SiwuTests */,
 				8C7D3E1D1D5349CA00D21B5A /* SiwuUITests */,
@@ -97,12 +226,15 @@
 		8C7D3DFD1D5349CA00D21B5A /* Siwu */ = {
 			isa = PBXGroup;
 			children = (
+				8C7D3E2E1D535FD200D21B5A /* Push */,
 				8C7D3DFE1D5349CA00D21B5A /* AppDelegate.swift */,
 				8C7D3E001D5349CA00D21B5A /* ViewController.swift */,
 				8C7D3E021D5349CA00D21B5A /* Main.storyboard */,
 				8C7D3E051D5349CA00D21B5A /* Assets.xcassets */,
 				8C7D3E071D5349CA00D21B5A /* LaunchScreen.storyboard */,
 				8C7D3E0A1D5349CA00D21B5A /* Info.plist */,
+				8C7D3E501D543E3C00D21B5A /* Siwu-bridging-header.h */,
+				8C7D3E511D543EB700D21B5A /* Config.swift */,
 			);
 			path = Siwu;
 			sourceTree = "<group>";
@@ -123,6 +255,105 @@
 				8C7D3E201D5349CA00D21B5A /* Info.plist */,
 			);
 			path = SiwuUITests;
+			sourceTree = "<group>";
+		};
+		8C7D3E2E1D535FD200D21B5A /* Push */ = {
+			isa = PBXGroup;
+			children = (
+				8C7D3E311D53600100D21B5A /* C */,
+				8C7D3E301D535FF700D21B5A /* V */,
+				8C7D3E2F1D535FEF00D21B5A /* M */,
+			);
+			name = Push;
+			sourceTree = "<group>";
+		};
+		8C7D3E2F1D535FEF00D21B5A /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = M;
+			sourceTree = "<group>";
+		};
+		8C7D3E301D535FF700D21B5A /* V */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = V;
+			sourceTree = "<group>";
+		};
+		8C7D3E311D53600100D21B5A /* C */ = {
+			isa = PBXGroup;
+			children = (
+				8C7D3E341D53606700D21B5A /* PushViewController.swift */,
+				8C7D3E361D5360A100D21B5A /* CreateItemViewController.swift */,
+				8C7D3E491D543C7200D21B5A /* PhotoPickerViewController.swift */,
+			);
+			name = C;
+			sourceTree = "<group>";
+		};
+		8C7D3E4B1D543DCA00D21B5A /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				8C7D3E541D5469A300D21B5A /* JVFloatLabeledTextField */,
+				8C7D3E4C1D543DFD00D21B5A /* VPImageCropper */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		8C7D3E4C1D543DFD00D21B5A /* VPImageCropper */ = {
+			isa = PBXGroup;
+			children = (
+				8C7D3E4D1D543DFD00D21B5A /* VPImageCropperViewController.h */,
+				8C7D3E4E1D543DFD00D21B5A /* VPImageCropperViewController.m */,
+			);
+			path = VPImageCropper;
+			sourceTree = "<group>";
+		};
+		8C7D3E541D5469A300D21B5A /* JVFloatLabeledTextField */ = {
+			isa = PBXGroup;
+			children = (
+				8C7D3E551D5469A300D21B5A /* JVFloatLabeledTextField.h */,
+				8C7D3E561D5469A300D21B5A /* JVFloatLabeledTextField.m */,
+				8C7D3E571D5469A300D21B5A /* JVFloatLabeledTextView.h */,
+				8C7D3E581D5469A300D21B5A /* JVFloatLabeledTextView.m */,
+				8C7D3E591D5469A300D21B5A /* NSString+TextDirectionality.h */,
+				8C7D3E5A1D5469A300D21B5A /* NSString+TextDirectionality.m */,
+			);
+			path = JVFloatLabeledTextField;
+			sourceTree = "<group>";
+		};
+		8CAF93EB1D59B9B300EFDEB2 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				8CAF94201D59BB5000EFDEB2 /* CoreLocation.framework */,
+				8CAF941E1D59BB4500EFDEB2 /* CoreTelephony.framework */,
+				8CAF941C1D59BB3800EFDEB2 /* MobileCoreServices.framework */,
+				8CAF941A1D59BB2600EFDEB2 /* SystemConfiguration.framework */,
+				8CAF94181D59BB1900EFDEB2 /* libsqlite3.tbd */,
+				8CAF94161D59BB0E00EFDEB2 /* libicucore.tbd */,
+				8CAF94141D59BB0000EFDEB2 /* libc++.tbd */,
+				8CAF94121D59BA8300EFDEB2 /* libz.tbd */,
+				8CAF93EC1D59BA0600EFDEB2 /* AVOS.xcodeproj */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		8CAF93ED1D59BA0600EFDEB2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8CAF93FB1D59BA0600EFDEB2 /* AVOSCloud.framework */,
+				8CAF93FD1D59BA0600EFDEB2 /* AVOSCloud-iOSTests.xctest */,
+				8CAF93FF1D59BA0600EFDEB2 /* AVOSCloud.framework */,
+				8CAF94011D59BA0600EFDEB2 /* AVOSCloud-macOSTests.xctest */,
+				8CAF94031D59BA0600EFDEB2 /* AVOSCloud.framework */,
+				8CAF94051D59BA0600EFDEB2 /* AVOSCloud.framework */,
+				8CAF94071D59BA0600EFDEB2 /* AVOSCloudIM.framework */,
+				8CAF94091D59BA0600EFDEB2 /* AVOSCloudIM-iOSTests.xctest */,
+				8CAF940B1D59BA0600EFDEB2 /* AVOSCloudIM.framework */,
+				8CAF940D1D59BA0600EFDEB2 /* AVOSCloudIM-macOSTests.xctest */,
+				8CAF940F1D59BA0600EFDEB2 /* AVOSCloudCrashReporting.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +449,12 @@
 			mainGroup = 8C7D3DF21D5349CA00D21B5A;
 			productRefGroup = 8C7D3DFC1D5349CA00D21B5A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8CAF93ED1D59BA0600EFDEB2 /* Products */;
+					ProjectRef = 8CAF93EC1D59BA0600EFDEB2 /* AVOS.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8C7D3DFA1D5349CA00D21B5A /* Siwu */,
@@ -226,6 +463,86 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8CAF93FB1D59BA0600EFDEB2 /* AVOSCloud.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AVOSCloud.framework;
+			remoteRef = 8CAF93FA1D59BA0600EFDEB2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8CAF93FD1D59BA0600EFDEB2 /* AVOSCloud-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "AVOSCloud-iOSTests.xctest";
+			remoteRef = 8CAF93FC1D59BA0600EFDEB2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8CAF93FF1D59BA0600EFDEB2 /* AVOSCloud.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AVOSCloud.framework;
+			remoteRef = 8CAF93FE1D59BA0600EFDEB2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8CAF94011D59BA0600EFDEB2 /* AVOSCloud-macOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "AVOSCloud-macOSTests.xctest";
+			remoteRef = 8CAF94001D59BA0600EFDEB2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8CAF94031D59BA0600EFDEB2 /* AVOSCloud.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AVOSCloud.framework;
+			remoteRef = 8CAF94021D59BA0600EFDEB2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8CAF94051D59BA0600EFDEB2 /* AVOSCloud.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AVOSCloud.framework;
+			remoteRef = 8CAF94041D59BA0600EFDEB2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8CAF94071D59BA0600EFDEB2 /* AVOSCloudIM.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AVOSCloudIM.framework;
+			remoteRef = 8CAF94061D59BA0600EFDEB2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8CAF94091D59BA0600EFDEB2 /* AVOSCloudIM-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "AVOSCloudIM-iOSTests.xctest";
+			remoteRef = 8CAF94081D59BA0600EFDEB2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8CAF940B1D59BA0600EFDEB2 /* AVOSCloudIM.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AVOSCloudIM.framework;
+			remoteRef = 8CAF940A1D59BA0600EFDEB2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8CAF940D1D59BA0600EFDEB2 /* AVOSCloudIM-macOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "AVOSCloudIM-macOSTests.xctest";
+			remoteRef = 8CAF940C1D59BA0600EFDEB2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8CAF940F1D59BA0600EFDEB2 /* AVOSCloudCrashReporting.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AVOSCloudCrashReporting.framework;
+			remoteRef = 8CAF940E1D59BA0600EFDEB2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8C7D3DF91D5349CA00D21B5A /* Resources */ = {
@@ -259,8 +576,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C7D3E4A1D543C7200D21B5A /* PhotoPickerViewController.swift in Sources */,
 				8C7D3E011D5349CA00D21B5A /* ViewController.swift in Sources */,
+				8C7D3E4F1D543DFD00D21B5A /* VPImageCropperViewController.m in Sources */,
+				8C7D3E521D543EB700D21B5A /* Config.swift in Sources */,
+				8C7D3E5B1D5469A300D21B5A /* JVFloatLabeledTextField.m in Sources */,
+				8C7D3E351D53606700D21B5A /* PushViewController.swift in Sources */,
+				8C7D3E5C1D5469A300D21B5A /* JVFloatLabeledTextView.m in Sources */,
 				8C7D3DFF1D5349CA00D21B5A /* AppDelegate.swift in Sources */,
+				8C7D3E5D1D5469A300D21B5A /* NSString+TextDirectionality.m in Sources */,
+				8C7D3E371D5360A100D21B5A /* CreateItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,8 +727,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Siwu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zte.Siwu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Siwu/Siwu-bridging-header.h";
 			};
 			name = Debug;
 		};
@@ -413,8 +740,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Siwu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zte.Siwu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Siwu/Siwu-bridging-header.h";
 			};
 			name = Release;
 		};
@@ -485,6 +814,7 @@
 				8C7D3E251D5349CA00D21B5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8C7D3E261D5349CA00D21B5A /* Build configuration list for PBXNativeTarget "SiwuTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +823,7 @@
 				8C7D3E281D5349CA00D21B5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8C7D3E291D5349CA00D21B5A /* Build configuration list for PBXNativeTarget "SiwuUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +832,7 @@
 				8C7D3E2B1D5349CA00D21B5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
