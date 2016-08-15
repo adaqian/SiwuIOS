@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--编辑图片-->
+        <scene sceneID="e2Z-Ui-00S">
+            <objects>
+                <viewController id="fJF-M6-teu" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XkS-yT-Fvh"/>
+                        <viewControllerLayoutGuide type="bottom" id="ajn-rx-jxl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LvE-nQ-8OX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alpacino.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="x8I-yw-4ZN">
+                                <rect key="frame" x="67" y="109" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="编辑图片" id="xUh-ja-7RK"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uIs-Tx-XbM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1376.5" y="285.5"/>
+        </scene>
+        <!--Main Edit Image Controller-->
+        <scene sceneID="i4H-o6-4PB">
+            <objects>
+                <navigationController storyboardIdentifier="pushImage" automaticallyAdjustsScrollViewInsets="NO" id="6KM-vg-ul5" customClass="MainEditImageController" customModule="Siwu" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WOx-3A-U6n">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fJF-M6-teu" kind="relationship" relationship="rootViewController" id="noc-ya-YR5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zPH-VM-xqE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="565" y="286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="alpacino.jpg" width="19" height="25"/>
+    </resources>
+</document>
