@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C08E2F31D6160320011F10C /* TagInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C08E2F21D6160320011F10C /* TagInfo.swift */; };
+		8C08E2F51D61610C0011F10C /* TagFrameInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C08E2F41D61610C0011F10C /* TagFrameInfo.swift */; };
+		8C08E2F71D616C290011F10C /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C08E2F61D616C290011F10C /* TagView.swift */; };
+		8C08E2F91D619B460011F10C /* ImageExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C08E2F81D619B460011F10C /* ImageExtention.swift */; };
 		8C7D3DFF1D5349CA00D21B5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D3DFE1D5349CA00D21B5A /* AppDelegate.swift */; };
 		8C7D3E011D5349CA00D21B5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D3E001D5349CA00D21B5A /* ViewController.swift */; };
 		8C7D3E041D5349CA00D21B5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C7D3E021D5349CA00D21B5A /* Main.storyboard */; };
@@ -172,6 +176,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C08E2F21D6160320011F10C /* TagInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagInfo.swift; sourceTree = "<group>"; };
+		8C08E2F41D61610C0011F10C /* TagFrameInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagFrameInfo.swift; sourceTree = "<group>"; };
+		8C08E2F61D616C290011F10C /* TagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
+		8C08E2F81D619B460011F10C /* ImageExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageExtention.swift; sourceTree = "<group>"; };
 		8C7D3DFB1D5349CA00D21B5A /* Siwu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Siwu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C7D3DFE1D5349CA00D21B5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C7D3E001D5349CA00D21B5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -325,6 +333,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C08E2F11D615FC90011F10C /* Tag */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Tag;
+			sourceTree = "<group>";
+		};
 		8C7D3DF21D5349CA00D21B5A = {
 			isa = PBXGroup;
 			children = (
@@ -350,6 +365,7 @@
 		8C7D3DFD1D5349CA00D21B5A /* Siwu */ = {
 			isa = PBXGroup;
 			children = (
+				8C08E2F11D615FC90011F10C /* Tag */,
 				97FFBFB21D6032250074839E /* UI */,
 				8C7D3E2E1D535FD200D21B5A /* Push */,
 				8C7D3DFE1D5349CA00D21B5A /* AppDelegate.swift */,
@@ -402,6 +418,10 @@
 		8C7D3E301D535FF700D21B5A /* V */ = {
 			isa = PBXGroup;
 			children = (
+				8C08E2F21D6160320011F10C /* TagInfo.swift */,
+				8C08E2F41D61610C0011F10C /* TagFrameInfo.swift */,
+				8C08E2F61D616C290011F10C /* TagView.swift */,
+				8C08E2F81D619B460011F10C /* ImageExtention.swift */,
 			);
 			name = V;
 			sourceTree = "<group>";
@@ -865,6 +885,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97FFBF5B1D6015ED0074839E /* UIImage+GIF.m in Sources */,
+				8C08E2F71D616C290011F10C /* TagView.swift in Sources */,
 				97FFBF951D6016040074839E /* MJRefreshAutoGifFooter.m in Sources */,
 				97FFBF971D6016040074839E /* MJRefreshAutoStateFooter.m in Sources */,
 				97FFBFA31D6016040074839E /* UIView+MJExtension.m in Sources */,
@@ -880,9 +901,11 @@
 				97FFBFA71D601B880074839E /* MainTabBar.swift in Sources */,
 				97FFBF521D6015ED0074839E /* NSData+ImageContentType.m in Sources */,
 				8C7D3E521D543EB700D21B5A /* Config.swift in Sources */,
+				8C08E2F31D6160320011F10C /* TagInfo.swift in Sources */,
 				8C7D3E5B1D5469A300D21B5A /* JVFloatLabeledTextField.m in Sources */,
 				97FFBF9B1D6016040074839E /* MJRefreshGifHeader.m in Sources */,
 				97FFBF5A1D6015ED0074839E /* UIButton+WebCache.m in Sources */,
+				8C08E2F51D61610C0011F10C /* TagFrameInfo.swift in Sources */,
 				97FFBF9D1D6016040074839E /* MJRefreshStateHeader.m in Sources */,
 				97FFBF571D6015ED0074839E /* SDWebImageDownloaderOperation.m in Sources */,
 				97FFBF991D6016040074839E /* MJRefreshBackNormalFooter.m in Sources */,
@@ -906,6 +929,7 @@
 				97FFBF901D6016040074839E /* MJRefreshAutoFooter.m in Sources */,
 				97FFBF5D1D6015ED0074839E /* UIImage+WebP.m in Sources */,
 				97FFBF9A1D6016040074839E /* MJRefreshBackStateFooter.m in Sources */,
+				8C08E2F91D619B460011F10C /* ImageExtention.swift in Sources */,
 				97FFBF581D6015ED0074839E /* SDWebImageManager.m in Sources */,
 				97FFBF941D6016040074839E /* MJRefreshHeader.m in Sources */,
 				97FFBF981D6016040074839E /* MJRefreshBackGifFooter.m in Sources */,

@@ -17,7 +17,8 @@ class EditImageController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        ///imageView.image = image
+        imageView.image = image
+        self.navigationController?.setToolbarHidden(false, animated: true)
         //print(imageView)
     }
 
@@ -26,15 +27,19 @@ class EditImageController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func close(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true){ () -> Void in
+        }
     }
-    */
+
+    @IBAction func addTextTag(sender: AnyObject) {
+        let tagInfo = TagInfo(tagX: 50, tagY: 100, tagText: "测试标签12345")
+        let tagFrameInfo = TagFrameInfo(tagInfo:tagInfo)
+        let tagView = TagView(tagFrameInfo:tagFrameInfo)
+        tagView.userInteractionEnabled = true
+        tagView.canTouch = true
+        self.imageView.addSubview(tagView)
+    }
+    
 
 }

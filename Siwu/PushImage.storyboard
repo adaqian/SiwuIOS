@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--编辑图片-->
         <scene sceneID="e2Z-Ui-00S">
             <objects>
-                <viewController id="fJF-M6-teu" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="editImage" id="fJF-M6-teu" customClass="EditImageController" customModule="Siwu" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XkS-yT-Fvh"/>
                         <viewControllerLayoutGuide type="bottom" id="ajn-rx-jxl"/>
@@ -17,23 +18,76 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alpacino.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="x8I-yw-4ZN">
-                                <rect key="frame" x="67" y="109" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yangmi" translatesAutoresizingMaskIntoConstraints="NO" id="x8I-yw-4ZN">
+                                <rect key="frame" x="-4" y="64" width="383" height="559"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="x8I-yw-4ZN" firstAttribute="leading" secondItem="LvE-nQ-8OX" secondAttribute="leadingMargin" constant="-20" id="366-hX-v0B"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="x8I-yw-4ZN" secondAttribute="trailing" constant="-20" id="RgS-S0-7MM"/>
+                            <constraint firstItem="ajn-rx-jxl" firstAttribute="top" secondItem="x8I-yw-4ZN" secondAttribute="bottom" id="cJG-eF-uYC"/>
+                            <constraint firstItem="x8I-yw-4ZN" firstAttribute="top" secondItem="XkS-yT-Fvh" secondAttribute="bottom" id="s6J-6n-QWf"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="编辑图片" id="xUh-ja-7RK"/>
+                    <toolbarItems>
+                        <barButtonItem title="标签" id="ytn-q0-cXw">
+                            <connections>
+                                <segue destination="HeW-40-Cij" kind="push" id="Wvn-tb-vpx"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="编辑图片" id="xUh-ja-7RK">
+                        <barButtonItem key="leftBarButtonItem" title="取消" id="GX2-xP-Q98">
+                            <connections>
+                                <action selector="close:" destination="fJF-M6-teu" id="g8A-2Q-KZR"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="下一步" id="6rW-qO-9Su"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="imageView" destination="x8I-yw-4ZN" id="uWU-bp-6Wl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uIs-Tx-XbM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1376.5" y="285.5"/>
         </scene>
+        <!--添加标签-->
+        <scene sceneID="Kag-9h-EFx">
+            <objects>
+                <viewController id="HeW-40-Cij" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h14-3h-e2T"/>
+                        <viewControllerLayoutGuide type="bottom" id="M8n-OR-YHj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ICV-W7-3F3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s8g-Rd-xoN">
+                                <rect key="frame" x="20" y="72" width="342" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="添加标签" id="TbE-XU-1nn">
+                        <barButtonItem key="rightBarButtonItem" title="确定" id="2II-bL-dfR"/>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uWx-3X-d4I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2040.5" y="285.5"/>
+        </scene>
         <!--Main Edit Image Controller-->
         <scene sceneID="i4H-o6-4PB">
             <objects>
-                <navigationController storyboardIdentifier="pushImage" automaticallyAdjustsScrollViewInsets="NO" id="6KM-vg-ul5" customClass="MainEditImageController" customModule="Siwu" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="editImageMain" automaticallyAdjustsScrollViewInsets="NO" id="6KM-vg-ul5" customClass="MainEditImageController" customModule="Siwu" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="WOx-3A-U6n">
@@ -51,6 +105,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="alpacino.jpg" width="19" height="25"/>
+        <image name="yangmi" width="428" height="513"/>
     </resources>
 </document>

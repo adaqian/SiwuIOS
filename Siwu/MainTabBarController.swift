@@ -15,7 +15,7 @@ class MainTabBarController: UITabBarController,PhotoPickerDelegate{
         super.viewDidLoad()
 
         //addChildViewController(<#T##childController: UIViewController##UIViewController#>)
-        mainTabBar.composeButton.addTarget(self, action: #selector(MainTabBarController.composeButtonClick), forControlEvents: UIControlEvents.TouchUpInside)
+        mainTabBar.composeButton.addTarget(self, action: Selector("composeButtonClick"), forControlEvents: UIControlEvents.TouchUpInside)
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,7 +24,7 @@ class MainTabBarController: UITabBarController,PhotoPickerDelegate{
     }
     
     func composeButtonClick(){
-        print(#function)
+        //print(#function)
         let vc = PhotoPickerViewController()
         vc.delegate = self
         self.presentViewController(vc, animated: true, completion:{ (action) -> Void in
@@ -41,12 +41,9 @@ class MainTabBarController: UITabBarController,PhotoPickerDelegate{
 //        }
         //no crop
         let story = UIStoryboard(name: "PushImage", bundle: nil)
-        let vc = story.instantiateViewControllerWithIdentifier("pushImage")
-        self.presentViewController(vc, animated: true, completion: { () -> Void in
-            
-        })
-
-        //vc.image = image
+        let vc = story.instantiateViewControllerWithIdentifier("editImageMain") as! MainEditImageController
+        let mvc = vc.topViewController as! EditImageController
+        mvc.image = image
         self.presentViewController(vc, animated: true){ () -> Void in
         }
         
