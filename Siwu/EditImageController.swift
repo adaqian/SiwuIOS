@@ -49,8 +49,8 @@ class EditImageController: UIViewController {
     @IBAction func addTextTag(segue:UIStoryboardSegue){
         let vc = segue.sourceViewController as! AddTagController
         let tagText = vc.tagName.text
-        //print("x=\(self.imageView.center.x),y=\(self.imageView.center.y)")
-        let tagInfo = TagInfo(tagX: 50, tagY: 100, tagText: tagText!)
+        print("x=\(self.imageView.center.x),y=\(self.imageView.center.y)")
+        let tagInfo = TagInfo(tagX: self.imageView.center.x, tagY: self.imageView.center.y, tagText: tagText!)
         let tagFrameInfo = TagFrameInfo(tagInfo:tagInfo)
         let tagView = TagView(tagFrameInfo:tagFrameInfo)
         self.view.addSubview(tagView)

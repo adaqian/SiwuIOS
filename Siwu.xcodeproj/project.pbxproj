@@ -415,6 +415,8 @@
 		8C7D3E2F1D535FEF00D21B5A /* M */ = {
 			isa = PBXGroup;
 			children = (
+				8C08E2F21D6160320011F10C /* TagInfo.swift */,
+				8C08E2F41D61610C0011F10C /* TagFrameInfo.swift */,
 			);
 			name = M;
 			sourceTree = "<group>";
@@ -422,8 +424,6 @@
 		8C7D3E301D535FF700D21B5A /* V */ = {
 			isa = PBXGroup;
 			children = (
-				8C08E2F21D6160320011F10C /* TagInfo.swift */,
-				8C08E2F41D61610C0011F10C /* TagFrameInfo.swift */,
 				8C08E2F61D616C290011F10C /* TagView.swift */,
 				8C08E2F81D619B460011F10C /* ImageExtention.swift */,
 				8C08E2FE1D62F3280011F10C /* TagImageView.swift */,

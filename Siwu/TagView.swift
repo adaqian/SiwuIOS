@@ -49,7 +49,7 @@ class TagView: UIView,UIGestureRecognizerDelegate{
         self.center = CGPointMake(center.x + translation.x, center.y + translation.y)
         let x = self.frame.origin.x
         let y = self.frame.origin.y + 13.5
-        print("x=\(x),y=\(y)")
+        //print("x=\(x),y=\(y)")
         panGes.setTranslation(CGPointMake(0,0), inView: self.ww_getKeyWindow())
         if panGes.state == UIGestureRecognizerState.Ended{
             //self.panEndCenter = self.center
