@@ -11,6 +11,8 @@
 		8C08E2F51D61610C0011F10C /* TagFrameInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C08E2F41D61610C0011F10C /* TagFrameInfo.swift */; };
 		8C08E2F71D616C290011F10C /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C08E2F61D616C290011F10C /* TagView.swift */; };
 		8C08E2F91D619B460011F10C /* ImageExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C08E2F81D619B460011F10C /* ImageExtention.swift */; };
+		8C08E2FD1D62B8DC0011F10C /* AddTagController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C08E2FC1D62B8DC0011F10C /* AddTagController.swift */; };
+		8C08E2FF1D62F3280011F10C /* TagImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C08E2FE1D62F3280011F10C /* TagImageView.swift */; };
 		8C7D3DFF1D5349CA00D21B5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D3DFE1D5349CA00D21B5A /* AppDelegate.swift */; };
 		8C7D3E011D5349CA00D21B5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D3E001D5349CA00D21B5A /* ViewController.swift */; };
 		8C7D3E041D5349CA00D21B5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C7D3E021D5349CA00D21B5A /* Main.storyboard */; };
@@ -180,6 +182,8 @@
 		8C08E2F41D61610C0011F10C /* TagFrameInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagFrameInfo.swift; sourceTree = "<group>"; };
 		8C08E2F61D616C290011F10C /* TagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
 		8C08E2F81D619B460011F10C /* ImageExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageExtention.swift; sourceTree = "<group>"; };
+		8C08E2FC1D62B8DC0011F10C /* AddTagController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTagController.swift; sourceTree = "<group>"; };
+		8C08E2FE1D62F3280011F10C /* TagImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagImageView.swift; sourceTree = "<group>"; };
 		8C7D3DFB1D5349CA00D21B5A /* Siwu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Siwu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C7D3DFE1D5349CA00D21B5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C7D3E001D5349CA00D21B5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -422,6 +426,7 @@
 				8C08E2F41D61610C0011F10C /* TagFrameInfo.swift */,
 				8C08E2F61D616C290011F10C /* TagView.swift */,
 				8C08E2F81D619B460011F10C /* ImageExtention.swift */,
+				8C08E2FE1D62F3280011F10C /* TagImageView.swift */,
 			);
 			name = V;
 			sourceTree = "<group>";
@@ -434,6 +439,7 @@
 				8C7D3E491D543C7200D21B5A /* PhotoPickerViewController.swift */,
 				97FFBFAC1D602EDB0074839E /* EditImageController.swift */,
 				97FFBFAE1D6030BA0074839E /* MainEditImageController.swift */,
+				8C08E2FC1D62B8DC0011F10C /* AddTagController.swift */,
 			);
 			name = C;
 			sourceTree = "<group>";
@@ -890,6 +896,7 @@
 				97FFBF971D6016040074839E /* MJRefreshAutoStateFooter.m in Sources */,
 				97FFBFA31D6016040074839E /* UIView+MJExtension.m in Sources */,
 				8C7D3E4A1D543C7200D21B5A /* PhotoPickerViewController.swift in Sources */,
+				8C08E2FD1D62B8DC0011F10C /* AddTagController.swift in Sources */,
 				97FFBF921D6016040074839E /* MJRefreshComponent.m in Sources */,
 				97FFBF931D6016040074839E /* MJRefreshFooter.m in Sources */,
 				97FFBF591D6015ED0074839E /* SDWebImagePrefetcher.m in Sources */,
@@ -898,6 +905,7 @@
 				97FFBFA91D601EF10074839E /* MainTabBarController.swift in Sources */,
 				97FFBFA11D6016040074839E /* UIScrollView+MJExtension.m in Sources */,
 				8C7D3E4F1D543DFD00D21B5A /* VPImageCropperViewController.m in Sources */,
+				8C08E2FF1D62F3280011F10C /* TagImageView.swift in Sources */,
 				97FFBFA71D601B880074839E /* MainTabBar.swift in Sources */,
 				97FFBF521D6015ED0074839E /* NSData+ImageContentType.m in Sources */,
 				8C7D3E521D543EB700D21B5A /* Config.swift in Sources */,

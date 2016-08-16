@@ -27,17 +27,18 @@ class TagFrameInfo: NSObject {
         //let atts = [NSFontAttributeName:font]
         let textSize:CGSize = tagInfo.tagText.sizeWithAttributes([NSFontAttributeName:UIFont.systemFontOfSize(12)])
         //let textSize:CGRect = tagInfo.tagText.boundingRectWithSize(CGSizeMake(100,0), options: .UsesLineFragmentOrigin, attributes: atts, context: nil)
+      
+//        iconViewFrame = CGRectMake(tagInfo.tagX, tagInfo.tagY - pointWH * 0.5, pointWH, pointWH)
+//        textBGFram = CGRectMake(tagInfo.tagX + pointWH , tagInfo.tagY - textBGH * 0.5, textBGW + textSize.width + textPadding , textBGH)
+//        textLabelFrame = CGRectMake(tagInfo.tagX + pointWH + textBGW , tagInfo.tagY - textSize.height * 0.5, textSize.width, textSize.height)
+//        viewFrame = CGRectMake(tagInfo.tagX, tagInfo.tagY - textBGH * 0.5, pointWH + textBGFram.width, textBGH)
         
-        //textBGH = textSize.height + textPadding * 2
         
-        iconViewFrame = CGRectMake(tagInfo.tagX, tagInfo.tagY - pointWH * 0.5, pointWH, pointWH)
-        
-        
-        textBGFram = CGRectMake(tagInfo.tagX + pointWH , tagInfo.tagY - textBGH * 0.5, textBGW + textSize.width + textPadding , textBGH)
-        textLabelFrame = CGRectMake(tagInfo.tagX + pointWH + textBGW , tagInfo.tagY - textSize.height * 0.5, textSize.width, textSize.height)
-        
-        viewFrame = CGRectMake(tagInfo.tagX, tagInfo.tagY - textBGH * 0.5, pointWH + textBGFram.width, textBGH)
-        
+        viewFrame = CGRectMake(tagInfo.tagX, tagInfo.tagY - textBGH * 0.5, pointWH + textBGW + textSize.width + textPadding, textBGH)
+        iconViewFrame = CGRectMake(0, (textBGH - pointWH) * 0.5, pointWH, pointWH)
+        textBGFram = CGRectMake(pointWH , 0, textBGW + textSize.width + textPadding , textBGH)
+        textLabelFrame = CGRectMake(pointWH + textBGW , (textBGH - textSize.height) * 0.5, textSize.width, textSize.height)
+       
     }
 
 }

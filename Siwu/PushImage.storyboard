@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yangmi" translatesAutoresizingMaskIntoConstraints="NO" id="x8I-yw-4ZN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="x8I-yw-4ZN">
                                 <rect key="frame" x="-4" y="64" width="383" height="559"/>
                             </imageView>
                         </subviews>
@@ -33,7 +33,7 @@
                     <toolbarItems>
                         <barButtonItem title="标签" id="ytn-q0-cXw">
                             <connections>
-                                <segue destination="HeW-40-Cij" kind="push" id="Wvn-tb-vpx"/>
+                                <segue destination="HeW-40-Cij" kind="push" id="B8e-kB-fF4"/>
                             </connections>
                         </barButtonItem>
                     </toolbarItems>
@@ -53,12 +53,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uIs-Tx-XbM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1376.5" y="285.5"/>
+            <point key="canvasLocation" x="1356.5" y="291.5"/>
         </scene>
         <!--添加标签-->
         <scene sceneID="Kag-9h-EFx">
             <objects>
-                <viewController id="HeW-40-Cij" sceneMemberID="viewController">
+                <viewController id="HeW-40-Cij" customClass="AddTagController" customModule="Siwu" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="h14-3h-e2T"/>
                         <viewControllerLayoutGuide type="bottom" id="M8n-OR-YHj"/>
@@ -67,22 +67,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s8g-Rd-xoN">
-                                <rect key="frame" x="20" y="72" width="342" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s8g-Rd-xoN">
+                                <rect key="frame" x="6" y="72" width="360" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="i8k-vo-jkA"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="s8g-Rd-xoN" firstAttribute="leading" secondItem="ICV-W7-3F3" secondAttribute="leadingMargin" constant="-10" id="Eeq-EM-13g"/>
+                            <constraint firstItem="s8g-Rd-xoN" firstAttribute="top" secondItem="h14-3h-e2T" secondAttribute="bottom" constant="8" id="NA4-y5-xYA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="s8g-Rd-xoN" secondAttribute="trailing" constant="-7" id="awf-rd-Mmu"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="添加标签" id="TbE-XU-1nn">
-                        <barButtonItem key="rightBarButtonItem" title="确定" id="2II-bL-dfR"/>
+                        <barButtonItem key="rightBarButtonItem" title="确定" id="2II-bL-dfR">
+                            <connections>
+                                <segue destination="ZVb-zI-tdd" kind="unwind" unwindAction="addTextTag:" id="7PY-qM-bV5"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="tagName" destination="s8g-Rd-xoN" id="mZz-1K-GM5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uWx-3X-d4I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ZVb-zI-tdd" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2040.5" y="285.5"/>
+            <point key="canvasLocation" x="1998.5" y="291.5"/>
         </scene>
         <!--Main Edit Image Controller-->
         <scene sceneID="i4H-o6-4PB">
@@ -105,6 +121,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="yangmi" width="428" height="513"/>
+        <image name="arrow.png" width="15" height="40"/>
     </resources>
 </document>
