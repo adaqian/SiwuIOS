@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -102,7 +102,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uWx-3X-d4I" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="ZVb-zI-tdd" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1998.5" y="291.5"/>
+            <point key="canvasLocation" x="1920.5" y="-172.5"/>
         </scene>
         <!--编辑信息-->
         <scene sceneID="JMM-JW-dxw">
@@ -130,7 +130,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1pp-To-CKh" customClass="JVFloatLabeledTextView">
-                                <rect key="frame" x="-4" y="140" width="383" height="200"/>
+                                <rect key="frame" x="16" y="140" width="343" height="200"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="ZIt-sx-c1a"/>
@@ -139,7 +139,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="说点什么"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelYPadding">
+                                    <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelXPadding">
                                         <real key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
@@ -147,11 +147,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="1pp-To-CKh" firstAttribute="leading" secondItem="Fjs-EH-XG2" secondAttribute="leadingMargin" constant="-20" id="DI1-Mk-YVV"/>
+                            <constraint firstItem="1pp-To-CKh" firstAttribute="leading" secondItem="Fjs-EH-XG2" secondAttribute="leadingMargin" id="DI1-Mk-YVV"/>
                             <constraint firstItem="E69-CM-vcT" firstAttribute="leading" secondItem="Fjs-EH-XG2" secondAttribute="leadingMargin" constant="-20" id="rQ6-BE-YWY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="E69-CM-vcT" secondAttribute="trailing" constant="-20" id="sK6-NP-jBz"/>
                             <constraint firstItem="1pp-To-CKh" firstAttribute="top" secondItem="E69-CM-vcT" secondAttribute="bottom" constant="28" id="vk6-j8-YmN"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="1pp-To-CKh" secondAttribute="trailing" constant="-20" id="xMM-aD-iXv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1pp-To-CKh" secondAttribute="trailing" id="xMM-aD-iXv"/>
                             <constraint firstItem="E69-CM-vcT" firstAttribute="top" secondItem="62b-kW-CgM" secondAttribute="bottom" constant="18" id="xyt-pQ-yxs"/>
                         </constraints>
                     </view>
@@ -170,7 +170,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qM6-8u-OOz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2460.5" y="273.5"/>
+            <point key="canvasLocation" x="2384.5" y="315.5"/>
         </scene>
         <!--Main Edit Image Controller-->
         <scene sceneID="i4H-o6-4PB">

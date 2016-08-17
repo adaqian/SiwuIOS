@@ -19,8 +19,6 @@
 		8C63CE831D64066F00F0C774 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C63CE821D64066F00F0C774 /* HomeViewController.swift */; };
 		8C63CE851D6406D300F0C774 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C63CE841D6406D300F0C774 /* LoginViewController.swift */; };
 		8C63CE871D64081B00F0C774 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C63CE861D64081B00F0C774 /* RegisterController.swift */; };
-		8C63CEAC1D641F8200F0C774 /* AVOSCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C63CE971D641F6100F0C774 /* AVOSCloud.framework */; };
-		8C63CEAD1D641F8200F0C774 /* AVOSCloudIM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C63CEA31D641F6100F0C774 /* AVOSCloudIM.framework */; };
 		8C63CECC1D6461EB00F0C774 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C63CECB1D6461EB00F0C774 /* UserViewController.swift */; };
 		8C7D3DFF1D5349CA00D21B5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D3DFE1D5349CA00D21B5A /* AppDelegate.swift */; };
 		8C7D3E011D5349CA00D21B5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D3E001D5349CA00D21B5A /* ViewController.swift */; };
@@ -45,6 +43,8 @@
 		8CAF941D1D59BB3800EFDEB2 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CAF941C1D59BB3800EFDEB2 /* MobileCoreServices.framework */; };
 		8CAF941F1D59BB4500EFDEB2 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CAF941E1D59BB4500EFDEB2 /* CoreTelephony.framework */; };
 		8CAF94211D59BB5000EFDEB2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CAF94201D59BB5000EFDEB2 /* CoreLocation.framework */; };
+		97A0A3A51D649C550074107D /* AVOSCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A0A3901D649C3D0074107D /* AVOSCloud.framework */; };
+		97A0A3A61D649C550074107D /* AVOSCloudIM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A0A39C1D649C3D0074107D /* AVOSCloudIM.framework */; };
 		97FFBF2D1D6015DB0074839E /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 97FFBF2A1D6015DB0074839E /* ProgressHUD.bundle */; };
 		97FFBF2E1D6015DB0074839E /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FFBF2C1D6015DB0074839E /* ProgressHUD.m */; };
 		97FFBF511D6015ED0074839E /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FFBF311D6015ED0074839E /* MKAnnotationView+WebCache.m */; };
@@ -91,83 +91,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8C63CE961D641F6100F0C774 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8C63CE881D641F6000F0C774 /* AVOS.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8C8419861A5A791300C5C6C4;
-			remoteInfo = "AVOSCloud-iOS";
-		};
-		8C63CE981D641F6100F0C774 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8C63CE881D641F6000F0C774 /* AVOS.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8C8419911A5A791300C5C6C4;
-			remoteInfo = "AVOSCloud-iOSTests";
-		};
-		8C63CE9A1D641F6100F0C774 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8C63CE881D641F6000F0C774 /* AVOS.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 70CA7F681BDE2DC3000A3B21;
-			remoteInfo = "AVOSCloud-macOS";
-		};
-		8C63CE9C1D641F6100F0C774 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8C63CE881D641F6000F0C774 /* AVOS.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 70F315321BDE503B00D691B3;
-			remoteInfo = "AVOSCloud-macOSTests";
-		};
-		8C63CE9E1D641F6100F0C774 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8C63CE881D641F6000F0C774 /* AVOS.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 83D8CF551C17DAF50094279D;
-			remoteInfo = "AVOSCloud-tvOS";
-		};
-		8C63CEA01D641F6100F0C774 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8C63CE881D641F6000F0C774 /* AVOS.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8320F95C1C1918C60024B45E;
-			remoteInfo = "AVOSCloud-watchOS";
-		};
-		8C63CEA21D641F6100F0C774 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8C63CE881D641F6000F0C774 /* AVOS.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8C8419C31A5A796000C5C6C4;
-			remoteInfo = "AVOSCloudIM-iOS";
-		};
-		8C63CEA41D641F6100F0C774 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8C63CE881D641F6000F0C774 /* AVOS.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8C8419CD1A5A796000C5C6C4;
-			remoteInfo = "AVOSCloudIM-iOSTests";
-		};
-		8C63CEA61D641F6100F0C774 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8C63CE881D641F6000F0C774 /* AVOS.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 704F3B6E1BE0D0180033245C;
-			remoteInfo = "AVOSCloudIM-macOS";
-		};
-		8C63CEA81D641F6100F0C774 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8C63CE881D641F6000F0C774 /* AVOS.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 704F3B771BE0D0180033245C;
-			remoteInfo = "AVOSCloudIM-macOSTests";
-		};
-		8C63CEAA1D641F6100F0C774 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8C63CE881D641F6000F0C774 /* AVOS.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8C255D261AE9F815008A6FFC;
-			remoteInfo = "AVOSCloudCrashReporting-iOS";
-		};
 		8C7D3E101D5349CA00D21B5A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8C7D3DF31D5349CA00D21B5A /* Project object */;
@@ -181,6 +104,83 @@
 			proxyType = 1;
 			remoteGlobalIDString = 8C7D3DFA1D5349CA00D21B5A;
 			remoteInfo = Siwu;
+		};
+		97A0A38F1D649C3D0074107D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97A0A3811D649C3D0074107D /* AVOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8C8419861A5A791300C5C6C4;
+			remoteInfo = "AVOSCloud-iOS";
+		};
+		97A0A3911D649C3D0074107D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97A0A3811D649C3D0074107D /* AVOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8C8419911A5A791300C5C6C4;
+			remoteInfo = "AVOSCloud-iOSTests";
+		};
+		97A0A3931D649C3D0074107D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97A0A3811D649C3D0074107D /* AVOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 70CA7F681BDE2DC3000A3B21;
+			remoteInfo = "AVOSCloud-macOS";
+		};
+		97A0A3951D649C3D0074107D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97A0A3811D649C3D0074107D /* AVOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 70F315321BDE503B00D691B3;
+			remoteInfo = "AVOSCloud-macOSTests";
+		};
+		97A0A3971D649C3D0074107D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97A0A3811D649C3D0074107D /* AVOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 83D8CF551C17DAF50094279D;
+			remoteInfo = "AVOSCloud-tvOS";
+		};
+		97A0A3991D649C3D0074107D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97A0A3811D649C3D0074107D /* AVOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8320F95C1C1918C60024B45E;
+			remoteInfo = "AVOSCloud-watchOS";
+		};
+		97A0A39B1D649C3D0074107D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97A0A3811D649C3D0074107D /* AVOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8C8419C31A5A796000C5C6C4;
+			remoteInfo = "AVOSCloudIM-iOS";
+		};
+		97A0A39D1D649C3D0074107D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97A0A3811D649C3D0074107D /* AVOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8C8419CD1A5A796000C5C6C4;
+			remoteInfo = "AVOSCloudIM-iOSTests";
+		};
+		97A0A39F1D649C3D0074107D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97A0A3811D649C3D0074107D /* AVOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 704F3B6E1BE0D0180033245C;
+			remoteInfo = "AVOSCloudIM-macOS";
+		};
+		97A0A3A11D649C3D0074107D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97A0A3811D649C3D0074107D /* AVOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 704F3B771BE0D0180033245C;
+			remoteInfo = "AVOSCloudIM-macOSTests";
+		};
+		97A0A3A31D649C3D0074107D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97A0A3811D649C3D0074107D /* AVOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8C255D261AE9F815008A6FFC;
+			remoteInfo = "AVOSCloudCrashReporting-iOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -197,7 +197,6 @@
 		8C63CE821D64066F00F0C774 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8C63CE841D6406D300F0C774 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8C63CE861D64081B00F0C774 /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
-		8C63CE881D641F6000F0C774 /* AVOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AVOS.xcodeproj; path = "../library/objc-sdk-master/AVOS/AVOS.xcodeproj"; sourceTree = "<group>"; };
 		8C63CECB1D6461EB00F0C774 /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		8C7D3DFB1D5349CA00D21B5A /* Siwu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Siwu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C7D3DFE1D5349CA00D21B5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -233,6 +232,7 @@
 		8CAF941C1D59BB3800EFDEB2 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		8CAF941E1D59BB4500EFDEB2 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		8CAF94201D59BB5000EFDEB2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		97A0A3811D649C3D0074107D /* AVOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AVOS.xcodeproj; path = "../../library/objc-sdk-master/AVOS/AVOS.xcodeproj"; sourceTree = "<group>"; };
 		97FFBF2A1D6015DB0074839E /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
 		97FFBF2B1D6015DB0074839E /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
 		97FFBF2C1D6015DB0074839E /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
@@ -321,8 +321,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C63CEAC1D641F8200F0C774 /* AVOSCloud.framework in Frameworks */,
-				8C63CEAD1D641F8200F0C774 /* AVOSCloudIM.framework in Frameworks */,
+				97A0A3A51D649C550074107D /* AVOSCloud.framework in Frameworks */,
+				97A0A3A61D649C550074107D /* AVOSCloudIM.framework in Frameworks */,
 				8CAF94211D59BB5000EFDEB2 /* CoreLocation.framework in Frameworks */,
 				8CAF941F1D59BB4500EFDEB2 /* CoreTelephony.framework in Frameworks */,
 				8CAF941D1D59BB3800EFDEB2 /* MobileCoreServices.framework in Frameworks */,
@@ -389,24 +389,6 @@
 				8C63CE861D64081B00F0C774 /* RegisterController.swift */,
 			);
 			name = C;
-			sourceTree = "<group>";
-		};
-		8C63CE891D641F6000F0C774 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8C63CE971D641F6100F0C774 /* AVOSCloud.framework */,
-				8C63CE991D641F6100F0C774 /* AVOSCloud-iOSTests.xctest */,
-				8C63CE9B1D641F6100F0C774 /* AVOSCloud.framework */,
-				8C63CE9D1D641F6100F0C774 /* AVOSCloud-macOSTests.xctest */,
-				8C63CE9F1D641F6100F0C774 /* AVOSCloud.framework */,
-				8C63CEA11D641F6100F0C774 /* AVOSCloud.framework */,
-				8C63CEA31D641F6100F0C774 /* AVOSCloudIM.framework */,
-				8C63CEA51D641F6100F0C774 /* AVOSCloudIM-iOSTests.xctest */,
-				8C63CEA71D641F6100F0C774 /* AVOSCloudIM.framework */,
-				8C63CEA91D641F6100F0C774 /* AVOSCloudIM-macOSTests.xctest */,
-				8C63CEAB1D641F6100F0C774 /* AVOSCloudCrashReporting.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		8C63CEBE1D6461C600F0C774 /* User */ = {
@@ -567,7 +549,7 @@
 		8CAF93EB1D59B9B300EFDEB2 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				8C63CE881D641F6000F0C774 /* AVOS.xcodeproj */,
+				97A0A3811D649C3D0074107D /* AVOS.xcodeproj */,
 				8CAF94201D59BB5000EFDEB2 /* CoreLocation.framework */,
 				8CAF941E1D59BB4500EFDEB2 /* CoreTelephony.framework */,
 				8CAF941C1D59BB3800EFDEB2 /* MobileCoreServices.framework */,
@@ -578,6 +560,24 @@
 				8CAF94121D59BA8300EFDEB2 /* libz.tbd */,
 			);
 			name = Framework;
+			sourceTree = "<group>";
+		};
+		97A0A3821D649C3D0074107D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97A0A3901D649C3D0074107D /* AVOSCloud.framework */,
+				97A0A3921D649C3D0074107D /* AVOSCloud-iOSTests.xctest */,
+				97A0A3941D649C3D0074107D /* AVOSCloud.framework */,
+				97A0A3961D649C3D0074107D /* AVOSCloud-macOSTests.xctest */,
+				97A0A3981D649C3D0074107D /* AVOSCloud.framework */,
+				97A0A39A1D649C3D0074107D /* AVOSCloud.framework */,
+				97A0A39C1D649C3D0074107D /* AVOSCloudIM.framework */,
+				97A0A39E1D649C3D0074107D /* AVOSCloudIM-iOSTests.xctest */,
+				97A0A3A01D649C3D0074107D /* AVOSCloudIM.framework */,
+				97A0A3A21D649C3D0074107D /* AVOSCloudIM-macOSTests.xctest */,
+				97A0A3A41D649C3D0074107D /* AVOSCloudCrashReporting.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		97FFBF291D6015DB0074839E /* ProgressHUD */ = {
@@ -831,8 +831,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 8C63CE891D641F6000F0C774 /* Products */;
-					ProjectRef = 8C63CE881D641F6000F0C774 /* AVOS.xcodeproj */;
+					ProductGroup = 97A0A3821D649C3D0074107D /* Products */;
+					ProjectRef = 97A0A3811D649C3D0074107D /* AVOS.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -845,81 +845,81 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		8C63CE971D641F6100F0C774 /* AVOSCloud.framework */ = {
+		97A0A3901D649C3D0074107D /* AVOSCloud.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = AVOSCloud.framework;
-			remoteRef = 8C63CE961D641F6100F0C774 /* PBXContainerItemProxy */;
+			remoteRef = 97A0A38F1D649C3D0074107D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		8C63CE991D641F6100F0C774 /* AVOSCloud-iOSTests.xctest */ = {
+		97A0A3921D649C3D0074107D /* AVOSCloud-iOSTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "AVOSCloud-iOSTests.xctest";
-			remoteRef = 8C63CE981D641F6100F0C774 /* PBXContainerItemProxy */;
+			remoteRef = 97A0A3911D649C3D0074107D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		8C63CE9B1D641F6100F0C774 /* AVOSCloud.framework */ = {
+		97A0A3941D649C3D0074107D /* AVOSCloud.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = AVOSCloud.framework;
-			remoteRef = 8C63CE9A1D641F6100F0C774 /* PBXContainerItemProxy */;
+			remoteRef = 97A0A3931D649C3D0074107D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		8C63CE9D1D641F6100F0C774 /* AVOSCloud-macOSTests.xctest */ = {
+		97A0A3961D649C3D0074107D /* AVOSCloud-macOSTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "AVOSCloud-macOSTests.xctest";
-			remoteRef = 8C63CE9C1D641F6100F0C774 /* PBXContainerItemProxy */;
+			remoteRef = 97A0A3951D649C3D0074107D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		8C63CE9F1D641F6100F0C774 /* AVOSCloud.framework */ = {
+		97A0A3981D649C3D0074107D /* AVOSCloud.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = AVOSCloud.framework;
-			remoteRef = 8C63CE9E1D641F6100F0C774 /* PBXContainerItemProxy */;
+			remoteRef = 97A0A3971D649C3D0074107D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		8C63CEA11D641F6100F0C774 /* AVOSCloud.framework */ = {
+		97A0A39A1D649C3D0074107D /* AVOSCloud.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = AVOSCloud.framework;
-			remoteRef = 8C63CEA01D641F6100F0C774 /* PBXContainerItemProxy */;
+			remoteRef = 97A0A3991D649C3D0074107D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		8C63CEA31D641F6100F0C774 /* AVOSCloudIM.framework */ = {
+		97A0A39C1D649C3D0074107D /* AVOSCloudIM.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = AVOSCloudIM.framework;
-			remoteRef = 8C63CEA21D641F6100F0C774 /* PBXContainerItemProxy */;
+			remoteRef = 97A0A39B1D649C3D0074107D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		8C63CEA51D641F6100F0C774 /* AVOSCloudIM-iOSTests.xctest */ = {
+		97A0A39E1D649C3D0074107D /* AVOSCloudIM-iOSTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "AVOSCloudIM-iOSTests.xctest";
-			remoteRef = 8C63CEA41D641F6100F0C774 /* PBXContainerItemProxy */;
+			remoteRef = 97A0A39D1D649C3D0074107D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		8C63CEA71D641F6100F0C774 /* AVOSCloudIM.framework */ = {
+		97A0A3A01D649C3D0074107D /* AVOSCloudIM.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = AVOSCloudIM.framework;
-			remoteRef = 8C63CEA61D641F6100F0C774 /* PBXContainerItemProxy */;
+			remoteRef = 97A0A39F1D649C3D0074107D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		8C63CEA91D641F6100F0C774 /* AVOSCloudIM-macOSTests.xctest */ = {
+		97A0A3A21D649C3D0074107D /* AVOSCloudIM-macOSTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "AVOSCloudIM-macOSTests.xctest";
-			remoteRef = 8C63CEA81D641F6100F0C774 /* PBXContainerItemProxy */;
+			remoteRef = 97A0A3A11D649C3D0074107D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		8C63CEAB1D641F6100F0C774 /* AVOSCloudCrashReporting.framework */ = {
+		97A0A3A41D649C3D0074107D /* AVOSCloudCrashReporting.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = AVOSCloudCrashReporting.framework;
-			remoteRef = 8C63CEAA1D641F6100F0C774 /* PBXContainerItemProxy */;
+			remoteRef = 97A0A3A31D649C3D0074107D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

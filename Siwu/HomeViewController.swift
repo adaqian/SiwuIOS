@@ -52,7 +52,7 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 88
+        return 100
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -71,6 +71,7 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         itemDate.text = format.stringFromDate(date!)
         
         let imageFile = dict!["itemImage"] as? AVFile
+        print(imageFile?.url)
         itemImage.sd_setImageWithURL(NSURL(string:(imageFile?.url)!), placeholderImage: UIImage(named: "box"))
         return cell
     }
