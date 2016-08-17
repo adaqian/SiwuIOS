@@ -55,6 +55,13 @@ class EditImageController: UIViewController {
         let tagView = TagView(tagFrameInfo:tagFrameInfo)
         self.view.addSubview(tagView)
     }
-
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        print("prepareForSegue...")
+        if segue.identifier == "sendImage"{
+            let vc = segue.destinationViewController as! EditItemTextController
+            vc.itemImage = self.image
+        }
+    }
     
 }

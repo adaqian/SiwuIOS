@@ -43,7 +43,11 @@
                                 <action selector="close:" destination="fJF-M6-teu" id="g8A-2Q-KZR"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="下一步" id="6rW-qO-9Su"/>
+                        <barButtonItem key="rightBarButtonItem" title="下一步" id="6rW-qO-9Su">
+                            <connections>
+                                <segue destination="D6s-Ko-xPC" kind="push" identifier="sendImage" id="fjh-Rf-ENm"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -99,6 +103,74 @@
                 <exit id="ZVb-zI-tdd" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1998.5" y="291.5"/>
+        </scene>
+        <!--编辑信息-->
+        <scene sceneID="JMM-JW-dxw">
+            <objects>
+                <viewController id="D6s-Ko-xPC" customClass="EditItemTextController" customModule="Siwu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="62b-kW-CgM"/>
+                        <viewControllerLayoutGuide type="bottom" id="el9-5X-1rD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fjs-EH-XG2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="标题" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E69-CM-vcT" customClass="JVFloatLabeledTextField">
+                                <rect key="frame" x="-4" y="82" width="383" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2I1-rU-JZM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelXPadding">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1pp-To-CKh" customClass="JVFloatLabeledTextView">
+                                <rect key="frame" x="-4" y="140" width="383" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="ZIt-sx-c1a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="说点什么"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelYPadding">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1pp-To-CKh" firstAttribute="leading" secondItem="Fjs-EH-XG2" secondAttribute="leadingMargin" constant="-20" id="DI1-Mk-YVV"/>
+                            <constraint firstItem="E69-CM-vcT" firstAttribute="leading" secondItem="Fjs-EH-XG2" secondAttribute="leadingMargin" constant="-20" id="rQ6-BE-YWY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="E69-CM-vcT" secondAttribute="trailing" constant="-20" id="sK6-NP-jBz"/>
+                            <constraint firstItem="1pp-To-CKh" firstAttribute="top" secondItem="E69-CM-vcT" secondAttribute="bottom" constant="28" id="vk6-j8-YmN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1pp-To-CKh" secondAttribute="trailing" constant="-20" id="xMM-aD-iXv"/>
+                            <constraint firstItem="E69-CM-vcT" firstAttribute="top" secondItem="62b-kW-CgM" secondAttribute="bottom" constant="18" id="xyt-pQ-yxs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="编辑信息" id="bqu-fd-ZnH">
+                        <barButtonItem key="rightBarButtonItem" title="完成" id="5PK-0F-ISf">
+                            <connections>
+                                <action selector="saveItemInfo:" destination="D6s-Ko-xPC" id="nMI-Uo-tUW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="itemText" destination="1pp-To-CKh" id="RLQ-uQ-EHH"/>
+                        <outlet property="itemTitle" destination="E69-CM-vcT" id="VqO-Al-sCG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qM6-8u-OOz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2460.5" y="273.5"/>
         </scene>
         <!--Main Edit Image Controller-->
         <scene sceneID="i4H-o6-4PB">
