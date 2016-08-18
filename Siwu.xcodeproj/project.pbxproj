@@ -20,6 +20,8 @@
 		8C63CE851D6406D300F0C774 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C63CE841D6406D300F0C774 /* LoginViewController.swift */; };
 		8C63CE871D64081B00F0C774 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C63CE861D64081B00F0C774 /* RegisterController.swift */; };
 		8C63CECC1D6461EB00F0C774 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C63CECB1D6461EB00F0C774 /* UserViewController.swift */; };
+		8C63CED11D654F5300F0C774 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C63CECF1D654F5300F0C774 /* ItemCell.swift */; };
+		8C63CED21D654F5300F0C774 /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C63CED01D654F5300F0C774 /* ItemCell.xib */; };
 		8C7D3DFF1D5349CA00D21B5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D3DFE1D5349CA00D21B5A /* AppDelegate.swift */; };
 		8C7D3E011D5349CA00D21B5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D3E001D5349CA00D21B5A /* ViewController.swift */; };
 		8C7D3E041D5349CA00D21B5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C7D3E021D5349CA00D21B5A /* Main.storyboard */; };
@@ -198,6 +200,8 @@
 		8C63CE841D6406D300F0C774 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8C63CE861D64081B00F0C774 /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		8C63CECB1D6461EB00F0C774 /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		8C63CECF1D654F5300F0C774 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		8C63CED01D654F5300F0C774 /* ItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
 		8C7D3DFB1D5349CA00D21B5A /* Siwu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Siwu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C7D3DFE1D5349CA00D21B5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C7D3E001D5349CA00D21B5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -369,6 +373,7 @@
 		8C63CE7F1D64062F00F0C774 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				8C63CECE1D654D0900F0C774 /* V */,
 				8C63CE801D64063F00F0C774 /* C */,
 			);
 			name = Home;
@@ -405,6 +410,15 @@
 				8C63CECB1D6461EB00F0C774 /* UserViewController.swift */,
 			);
 			name = C;
+			sourceTree = "<group>";
+		};
+		8C63CECE1D654D0900F0C774 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				8C63CECF1D654F5300F0C774 /* ItemCell.swift */,
+				8C63CED01D654F5300F0C774 /* ItemCell.xib */,
+			);
+			name = V;
 			sourceTree = "<group>";
 		};
 		8C7D3DF21D5349CA00D21B5A = {
@@ -933,6 +947,7 @@
 				8C7D3E091D5349CA00D21B5A /* LaunchScreen.storyboard in Resources */,
 				8C63CE781D64001C00F0C774 /* Login.storyboard in Resources */,
 				8C7D3E061D5349CA00D21B5A /* Assets.xcassets in Resources */,
+				8C63CED21D654F5300F0C774 /* ItemCell.xib in Resources */,
 				97FFBF9E1D6016040074839E /* MJRefresh.bundle in Resources */,
 				97FFBFB11D6031E30074839E /* PushImage.storyboard in Resources */,
 				8C7D3E041D5349CA00D21B5A /* Main.storyboard in Resources */,
@@ -971,6 +986,7 @@
 				8C63CE871D64081B00F0C774 /* RegisterController.swift in Sources */,
 				97FFBF931D6016040074839E /* MJRefreshFooter.m in Sources */,
 				97FFBF591D6015ED0074839E /* SDWebImagePrefetcher.m in Sources */,
+				8C63CED11D654F5300F0C774 /* ItemCell.swift in Sources */,
 				97FFBFAF1D6030BA0074839E /* MainEditImageController.swift in Sources */,
 				8C7D3E011D5349CA00D21B5A /* ViewController.swift in Sources */,
 				97FFBFA91D601EF10074839E /* MainTabBarController.swift in Sources */,
