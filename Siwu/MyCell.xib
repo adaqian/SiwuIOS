@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyCell" rowHeight="192" id="KGk-i7-Jjw" customClass="MyCell" customModule="Siwu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="192"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="191"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KvO-Y9-W79">
+                        <rect key="frame" x="18" y="18" width="284" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="yangmi" translatesAutoresizingMaskIntoConstraints="NO" id="sew-uq-pEn" customClass="AspectFitImageView" customModule="Siwu" customModuleProvider="target">
+                        <rect key="frame" x="18" y="49" width="284" height="124"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="KvO-Y9-W79" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="4ND-b0-2dh"/>
+                    <constraint firstItem="sew-uq-pEn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="PR5-Cr-bH0"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="sew-uq-pEn" secondAttribute="trailing" constant="10" id="Rvg-5M-Nk2"/>
+                    <constraint firstItem="KvO-Y9-W79" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="Uyt-8L-aIj"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="KvO-Y9-W79" secondAttribute="trailing" constant="10" id="bHy-9G-wHm"/>
+                    <constraint firstItem="sew-uq-pEn" firstAttribute="top" secondItem="KvO-Y9-W79" secondAttribute="bottom" constant="10" id="hxn-we-G2f"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="sew-uq-pEn" secondAttribute="bottom" constant="10" id="zmb-BD-ISj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="itemImage" destination="sew-uq-pEn" id="eRQ-NR-GnM"/>
+                <outlet property="itemLabel" destination="KvO-Y9-W79" id="Oy7-S8-gPX"/>
+            </connections>
+            <point key="canvasLocation" x="657" y="342"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="yangmi" width="428" height="513"/>
+    </resources>
+</document>

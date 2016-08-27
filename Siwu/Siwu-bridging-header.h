@@ -13,3 +13,4 @@
 #import "ProgressHUD.h"
 #import "MJRefresh.h"
 #import "UIImageView+WebCache.h"
+#import "UITableView+FDTemplateLayoutCell.h"

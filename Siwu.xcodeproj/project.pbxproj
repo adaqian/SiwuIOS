@@ -22,6 +22,15 @@
 		8C63CECC1D6461EB00F0C774 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C63CECB1D6461EB00F0C774 /* UserViewController.swift */; };
 		8C63CED11D654F5300F0C774 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C63CECF1D654F5300F0C774 /* ItemCell.swift */; };
 		8C63CED21D654F5300F0C774 /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C63CED01D654F5300F0C774 /* ItemCell.xib */; };
+		8C63CED41D65B50B00F0C774 /* TimeLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C63CED31D65B50B00F0C774 /* TimeLineView.swift */; };
+		8C63CEF21D6FE02F00F0C774 /* UITableView+FDIndexPathHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C63CEEB1D6FE02F00F0C774 /* UITableView+FDIndexPathHeightCache.m */; };
+		8C63CEF31D6FE02F00F0C774 /* UITableView+FDKeyedHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C63CEED1D6FE02F00F0C774 /* UITableView+FDKeyedHeightCache.m */; };
+		8C63CEF41D6FE02F00F0C774 /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C63CEEF1D6FE02F00F0C774 /* UITableView+FDTemplateLayoutCell.m */; };
+		8C63CEF51D6FE02F00F0C774 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C63CEF11D6FE02F00F0C774 /* UITableView+FDTemplateLayoutCellDebug.m */; };
+		8C63CEFB1D7011F200F0C774 /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C63CEF91D7011F200F0C774 /* MyCell.swift */; };
+		8C63CEFC1D7011F200F0C774 /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C63CEFA1D7011F200F0C774 /* MyCell.xib */; };
+		8C63CEFF1D70266E00F0C774 /* ItemContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C63CEFE1D70266E00F0C774 /* ItemContent.swift */; };
+		8C63CF011D7140E500F0C774 /* AspectFitImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C63CF001D7140E500F0C774 /* AspectFitImageView.swift */; };
 		8C7D3DFF1D5349CA00D21B5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D3DFE1D5349CA00D21B5A /* AppDelegate.swift */; };
 		8C7D3E011D5349CA00D21B5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D3E001D5349CA00D21B5A /* ViewController.swift */; };
 		8C7D3E041D5349CA00D21B5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C7D3E021D5349CA00D21B5A /* Main.storyboard */; };
@@ -202,6 +211,19 @@
 		8C63CECB1D6461EB00F0C774 /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		8C63CECF1D654F5300F0C774 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		8C63CED01D654F5300F0C774 /* ItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
+		8C63CED31D65B50B00F0C774 /* TimeLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLineView.swift; sourceTree = "<group>"; };
+		8C63CEEA1D6FE02F00F0C774 /* UITableView+FDIndexPathHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDIndexPathHeightCache.h"; sourceTree = "<group>"; };
+		8C63CEEB1D6FE02F00F0C774 /* UITableView+FDIndexPathHeightCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDIndexPathHeightCache.m"; sourceTree = "<group>"; };
+		8C63CEEC1D6FE02F00F0C774 /* UITableView+FDKeyedHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDKeyedHeightCache.h"; sourceTree = "<group>"; };
+		8C63CEED1D6FE02F00F0C774 /* UITableView+FDKeyedHeightCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDKeyedHeightCache.m"; sourceTree = "<group>"; };
+		8C63CEEE1D6FE02F00F0C774 /* UITableView+FDTemplateLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCell.h"; sourceTree = "<group>"; };
+		8C63CEEF1D6FE02F00F0C774 /* UITableView+FDTemplateLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCell.m"; sourceTree = "<group>"; };
+		8C63CEF01D6FE02F00F0C774 /* UITableView+FDTemplateLayoutCellDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCellDebug.h"; sourceTree = "<group>"; };
+		8C63CEF11D6FE02F00F0C774 /* UITableView+FDTemplateLayoutCellDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCellDebug.m"; sourceTree = "<group>"; };
+		8C63CEF91D7011F200F0C774 /* MyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
+		8C63CEFA1D7011F200F0C774 /* MyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
+		8C63CEFE1D70266E00F0C774 /* ItemContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemContent.swift; sourceTree = "<group>"; };
+		8C63CF001D7140E500F0C774 /* AspectFitImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AspectFitImageView.swift; sourceTree = "<group>"; };
 		8C7D3DFB1D5349CA00D21B5A /* Siwu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Siwu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C7D3DFE1D5349CA00D21B5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C7D3E001D5349CA00D21B5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -373,6 +395,7 @@
 		8C63CE7F1D64062F00F0C774 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				8C63CEFD1D7024FD00F0C774 /* M */,
 				8C63CECE1D654D0900F0C774 /* V */,
 				8C63CE801D64063F00F0C774 /* C */,
 			);
@@ -417,8 +440,36 @@
 			children = (
 				8C63CECF1D654F5300F0C774 /* ItemCell.swift */,
 				8C63CED01D654F5300F0C774 /* ItemCell.xib */,
+				8C63CED31D65B50B00F0C774 /* TimeLineView.swift */,
+				8C63CEF91D7011F200F0C774 /* MyCell.swift */,
+				8C63CEFA1D7011F200F0C774 /* MyCell.xib */,
+				8C63CF001D7140E500F0C774 /* AspectFitImageView.swift */,
 			);
 			name = V;
+			sourceTree = "<group>";
+		};
+		8C63CEE91D6FE02F00F0C774 /* FDTemplateLayoutCell */ = {
+			isa = PBXGroup;
+			children = (
+				8C63CEEA1D6FE02F00F0C774 /* UITableView+FDIndexPathHeightCache.h */,
+				8C63CEEB1D6FE02F00F0C774 /* UITableView+FDIndexPathHeightCache.m */,
+				8C63CEEC1D6FE02F00F0C774 /* UITableView+FDKeyedHeightCache.h */,
+				8C63CEED1D6FE02F00F0C774 /* UITableView+FDKeyedHeightCache.m */,
+				8C63CEEE1D6FE02F00F0C774 /* UITableView+FDTemplateLayoutCell.h */,
+				8C63CEEF1D6FE02F00F0C774 /* UITableView+FDTemplateLayoutCell.m */,
+				8C63CEF01D6FE02F00F0C774 /* UITableView+FDTemplateLayoutCellDebug.h */,
+				8C63CEF11D6FE02F00F0C774 /* UITableView+FDTemplateLayoutCellDebug.m */,
+			);
+			name = FDTemplateLayoutCell;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8C63CEFD1D7024FD00F0C774 /* M */ = {
+			isa = PBXGroup;
+			children = (
+				8C63CEFE1D70266E00F0C774 /* ItemContent.swift */,
+			);
+			name = M;
 			sourceTree = "<group>";
 		};
 		8C7D3DF21D5349CA00D21B5A = {
@@ -529,6 +580,7 @@
 		8C7D3E4B1D543DCA00D21B5A /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				8C63CEE91D6FE02F00F0C774 /* FDTemplateLayoutCell */,
 				97FFBF611D6016040074839E /* MJRefresh */,
 				97FFBF2F1D6015ED0074839E /* SDWebImage */,
 				97FFBF291D6015DB0074839E /* ProgressHUD */,
@@ -950,6 +1002,7 @@
 				8C63CED21D654F5300F0C774 /* ItemCell.xib in Resources */,
 				97FFBF9E1D6016040074839E /* MJRefresh.bundle in Resources */,
 				97FFBFB11D6031E30074839E /* PushImage.storyboard in Resources */,
+				8C63CEFC1D7011F200F0C774 /* MyCell.xib in Resources */,
 				8C7D3E041D5349CA00D21B5A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -989,6 +1042,7 @@
 				8C63CED11D654F5300F0C774 /* ItemCell.swift in Sources */,
 				97FFBFAF1D6030BA0074839E /* MainEditImageController.swift in Sources */,
 				8C7D3E011D5349CA00D21B5A /* ViewController.swift in Sources */,
+				8C63CEFF1D70266E00F0C774 /* ItemContent.swift in Sources */,
 				97FFBFA91D601EF10074839E /* MainTabBarController.swift in Sources */,
 				97FFBFA11D6016040074839E /* UIScrollView+MJExtension.m in Sources */,
 				8C63CECC1D6461EB00F0C774 /* UserViewController.swift in Sources */,
@@ -999,22 +1053,27 @@
 				8C63CE761D63FE2A00F0C774 /* PushItemInfo.swift in Sources */,
 				8C7D3E521D543EB700D21B5A /* Config.swift in Sources */,
 				8C08E2F31D6160320011F10C /* TagInfo.swift in Sources */,
+				8C63CEF31D6FE02F00F0C774 /* UITableView+FDKeyedHeightCache.m in Sources */,
 				8C7D3E5B1D5469A300D21B5A /* JVFloatLabeledTextField.m in Sources */,
 				97FFBF9B1D6016040074839E /* MJRefreshGifHeader.m in Sources */,
 				97FFBF5A1D6015ED0074839E /* UIButton+WebCache.m in Sources */,
+				8C63CF011D7140E500F0C774 /* AspectFitImageView.swift in Sources */,
 				8C08E2F51D61610C0011F10C /* TagFrameInfo.swift in Sources */,
 				8C63CE741D63FAEC00F0C774 /* EditItemTextController.swift in Sources */,
 				97FFBF9D1D6016040074839E /* MJRefreshStateHeader.m in Sources */,
 				97FFBF571D6015ED0074839E /* SDWebImageDownloaderOperation.m in Sources */,
+				8C63CED41D65B50B00F0C774 /* TimeLineView.swift in Sources */,
 				97FFBF991D6016040074839E /* MJRefreshBackNormalFooter.m in Sources */,
 				97FFBF511D6015ED0074839E /* MKAnnotationView+WebCache.m in Sources */,
 				97FFBF541D6015ED0074839E /* SDWebImageCompat.m in Sources */,
 				97FFBFAD1D602EDB0074839E /* EditImageController.swift in Sources */,
 				8C7D3E351D53606700D21B5A /* PushViewController.swift in Sources */,
 				97FFBF5C1D6015ED0074839E /* UIImage+MultiFormat.m in Sources */,
+				8C63CEF21D6FE02F00F0C774 /* UITableView+FDIndexPathHeightCache.m in Sources */,
 				97FFBF5F1D6015ED0074839E /* UIImageView+WebCache.m in Sources */,
 				97FFBFA21D6016040074839E /* UIScrollView+MJRefresh.m in Sources */,
 				97FFBF2E1D6015DB0074839E /* ProgressHUD.m in Sources */,
+				8C63CEF41D6FE02F00F0C774 /* UITableView+FDTemplateLayoutCell.m in Sources */,
 				97FFBF601D6015ED0074839E /* UIView+WebCacheOperation.m in Sources */,
 				8C7D3E5C1D5469A300D21B5A /* JVFloatLabeledTextView.m in Sources */,
 				8C7D3DFF1D5349CA00D21B5A /* AppDelegate.swift in Sources */,
@@ -1022,6 +1081,7 @@
 				97FFBF9C1D6016040074839E /* MJRefreshNormalHeader.m in Sources */,
 				97FFBFA01D6016040074839E /* NSBundle+MJRefresh.m in Sources */,
 				97FFBF961D6016040074839E /* MJRefreshAutoNormalFooter.m in Sources */,
+				8C63CEFB1D7011F200F0C774 /* MyCell.swift in Sources */,
 				97FFBF5E1D6015ED0074839E /* UIImageView+HighlightedWebCache.m in Sources */,
 				97FFBF551D6015ED0074839E /* SDWebImageDecoder.m in Sources */,
 				97FFBF901D6016040074839E /* MJRefreshAutoFooter.m in Sources */,
@@ -1032,6 +1092,7 @@
 				97FFBF581D6015ED0074839E /* SDWebImageManager.m in Sources */,
 				97FFBF941D6016040074839E /* MJRefreshHeader.m in Sources */,
 				97FFBF981D6016040074839E /* MJRefreshBackGifFooter.m in Sources */,
+				8C63CEF51D6FE02F00F0C774 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
 				8C7D3E5D1D5469A300D21B5A /* NSString+TextDirectionality.m in Sources */,
 				97FFBF9F1D6016040074839E /* MJRefreshConst.m in Sources */,
 				8C63CE831D64066F00F0C774 /* HomeViewController.swift in Sources */,
