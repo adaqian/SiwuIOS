@@ -15,6 +15,7 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     let cellId = "MyCell"
     var cellHeightCacheEnabled: Bool?
     var cellHeights:[Int:CGFloat]=[:]
+    var cellLoadStatus:[Int:Bool]=[:]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -99,8 +100,13 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     func changeCellHeight(height:CGFloat,indexPath: NSIndexPath) {
         print("changeCellHeight:row=\(indexPath.row),height=\(height)")
         cellHeights[indexPath.row] = height
-        tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Fade)
-        print("reloadRows")
+        if cellLoadStatus[indexPath.row] == nil{
+            tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Fade)
+            cellLoadStatus[indexPath.row] = true
+            print("reloadRows")
+        }
+        
+        
     }
     
 //    func configureCell(cell:ItemCell,indexPath: NSIndexPath)->Void{
